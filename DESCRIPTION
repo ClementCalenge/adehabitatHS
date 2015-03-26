@@ -1,6 +1,6 @@
 Package: adehabitatHS
-Version: 0.3.10
-Date: 2013/12/17
+Version: 0.3.11
+Date: 2015/03/26
 Depends: R (>= 3.0.1), sp, methods, ade4, adehabitatMA, adehabitatHR
 Suggests: maptools, tkrplot, MASS, rgeos
 Title: Analysis of habitat selection by animals
