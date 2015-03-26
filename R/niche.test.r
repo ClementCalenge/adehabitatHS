@@ -12,6 +12,7 @@
         stop("the cellsize should be the same in x and y directions")
     if (!inherits(pts, "SpatialPoints"))
         stop("should inherit from class \"SpatialPoints\"")
+    pfs <- proj4string(x)
 
     toto <- as.matrix(join(pts, x))
     tutu <- apply(toto, 1, function(x) any(is.na(x)))
@@ -37,6 +38,8 @@
     ## Observation
     coordinates(ta) <- coordinates(x)
     gridded(ta) <- TRUE
+    proj4string(ta) <- CRS(pfs)
+
     tas <- join(pts, ta)
     mar <- sum(apply(tas,2,mean)^2)
     tol <- sum(apply(tas,2, function(y) sum(y^2)))
@@ -48,4 +51,3 @@
              o.include = o.include, ...)
     return(invisible(list(dfxy = dfxy, obs = obs)))
 }
-
