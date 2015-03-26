@@ -1,0 +1,25 @@
+useDynLib(adehabitatHS)
+
+import(methods,sp,ade4,adehabitatMA,adehabitatHR)
+
+exportPattern("^[^\\.]")
+
+S3method(print, engenetalI)
+S3method(print, engenetalII)
+S3method(print, gnesfa)
+S3method(hist, enfa)
+S3method(plot, kselect)
+S3method(plot, wi)
+S3method(predict, enfa)
+S3method(print, enfa)
+S3method(print, kselect)
+S3method(print, rand.kselect)
+S3method(print, wiIII)
+S3method(print, wiII)
+S3method(print, wiI)
+S3method(print, compana)
+S3method(print, madifa)
+S3method(hist, madifa)
+S3method(plot, madifa)
+S3method(predict, madifa)
+
