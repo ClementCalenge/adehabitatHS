@@ -4,15 +4,11 @@
                        side = c("top", "bottom", "none"), ...)
 {
     ## Verifications
-    if (!require(MASS))
-        stop("MASS package required")
     side <- match.arg(side)
     if (!inherits(dfxy, "data.frame"))
         stop("dfxy should be a data frame")
     if (ncol(dfxy) < 2)
         stop("dfxy should have at least two columns")
-    if (!require(MASS) & kernel)
-        stop("This function needs the package MASS")
     if (missing(pch))
         pch <- 16
     if (missing(cex))
