@@ -1,6 +1,9 @@
 useDynLib(adehabitatHS)
 
 import(methods,sp,ade4,adehabitatMA,adehabitatHR)
+importFrom("graphics", "abline", "arrows", "axis", "barplot", "box", "contour", "hist", "image", "layout", "legend", "lines", "mtext", "par", "plot.default", "points", "polygon", "rect", "strheight", "strwidth", "symbols", "text", "title")
+importFrom("grDevices", "chull", "gray", "grey", "n2mfrow")
+importFrom("stats", "cor", "density", "mahalanobis", "pchisq", "pt", "qnorm", "quantile", "var", "weighted.mean")
 
 exportPattern("^[^\\.]")
 
