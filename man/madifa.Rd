@@ -171,7 +171,7 @@ s.madifa(x, xax = 1, yax = 2, cgrid = 1, clab = 1, \dots)
     distances for the n units.}
   \item{cor}{the correlation between the MADIFA axes and the original
     variable}
-  \code{predict.madifa} returns a matrix of class \code{asc}. 
+  \code{predict.madifa} returns a matrix of class \code{SpatialPixelsDataFrame}. 
 }
 \references{
   Clark, J.D., Dunn, J.E. and Smith, K.G. (1993) A multivariate model of
