@@ -226,6 +226,7 @@ engen2008I(us, av, nsimra=10)
 
 ## simulate the available points
 
+suppressWarnings(RNGversion("3.5.0"))
 set.seed(235)
 av <- cbind(rnorm(1000, mean=0, sd=3), rnorm(1000, mean=0, sd=0.5))
 tt <- cbind(c(cos(-pi/4),sin(-pi/4)),c(cos(pi/4), sin(pi/4)))
