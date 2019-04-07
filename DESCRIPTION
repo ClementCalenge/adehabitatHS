@@ -1,6 +1,6 @@
 Package: adehabitatHS
 Version: 0.3.14
-Date: 2019-03-06
+Date: 2019-04-07
 Depends: R (>= 3.0.1), sp, methods, ade4, adehabitatMA, adehabitatHR
 Suggests: maptools, tkrplot, MASS, rgeos
 Imports: graphics, grDevices, stats
