@@ -76,7 +76,7 @@ canomi(dudiX, Y, scannf = TRUE, nf = 2)
   Chessel, D. 2006. Calcul de l'outlier mean index. Consultation
   statistique avec le logiciel R.
 }
-\author{Clement Calenge \email{clement.calenge@oncfs.gouv.fr} }
+\author{Clement Calenge \email{clement.calenge@ofb.gouv.fr} }
 \seealso{
   \code{\link[ade4]{dudi}} for class \code{dudi},
   \code{\link[ade4]{niche}} for classical OMI analysis

@@ -36,7 +36,7 @@ domain(x, pts, type = c("value", "potential"), thresh = 0.95)
   procedure for mapping potential distributions of plants and
   animals. \emph{Biodiversity and conservation}, \bold{2}, 667--680.
 }
-\author{Clement Calenge \email{clement.calenge@oncfs.gouv.fr} }
+\author{Clement Calenge \email{clement.calenge@ofb.gouv.fr} }
 
 \seealso{ \code{\link{mahasuhab}}   }
 

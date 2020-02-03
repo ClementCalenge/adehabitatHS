@@ -100,7 +100,7 @@ gnesfa(dudi, Focus, Reference,
   in habitat selection studies. \emph{Ecology}, \bold{89}, 555-566.
   
 }
-\author{Clement Calenge \email{clement.calenge@oncfs.gouv.fr}}
+\author{Clement Calenge \email{clement.calenge@ofb.gouv.fr}}
 \seealso{\code{\link{madifa}}, \code{\link{mahasuhab}},
   \code{\link{enfa}}, \code{\link{wi}} for closely related methods (see
   Examples)}

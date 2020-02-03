@@ -57,7 +57,7 @@ mahasuhab(x, pts, type = c("distance", "probability"))
   female black bear habitat use for a geographic information
   system. \emph{Journal of Wildlife Management}, \bold{57}, 519--526.
 }
-\author{ Clement Calenge \email{clement.calenge@oncfs.gouv.fr} }
+\author{ Clement Calenge \email{clement.calenge@ofb.gouv.fr} }
 \note{
 
   The computation of the squared Mahalanobis distances inverts the

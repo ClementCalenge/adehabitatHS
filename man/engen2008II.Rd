@@ -155,7 +155,7 @@ engen2008I(us, av, nsimra=500)
 
   Ripley, B. (1987) Stochastic Simulation. John Wiley and Sons.   
 }
-\author{ Clement Calenge \email{clement.calenge@oncfs.gouv.fr} }
+\author{ Clement Calenge \email{clement.calenge@ofb.gouv.fr} }
 \note{
   Be patient! these functions can be very long (depending on the number of
   sites and on the value of \code{simra})  

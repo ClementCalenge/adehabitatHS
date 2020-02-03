@@ -43,7 +43,7 @@ components:
 }
 \author{
   Mathieu Basille \email{basille@ase-research.org}\cr
-  Clement Calenge \email{clement.calenge@oncfs.gouv.fr}
+  Clement Calenge \email{clement.calenge@ofb.gouv.fr}
 }
 \section{Warning}{
  \code{biv.test} uses the function \code{kde2d} of the package \code{MASS}.

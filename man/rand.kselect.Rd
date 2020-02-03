@@ -74,7 +74,7 @@ rand.kselect(dudi, factor, weight, nrep = 200, alpha = 0.05, ewa = FALSE)
   new method to analyse habitat selection in radio-tracking
   studies. \emph{Ecological modelling}, \bold{186}, 143--153.
 }
-\author{ Clement Calenge \email{clement.calenge@oncfs.gouv.fr} }
+\author{ Clement Calenge \email{clement.calenge@ofb.gouv.fr} }
 \seealso{ \code{\link{kselect}} to perform a K-select analysis. }
 
 \examples{
