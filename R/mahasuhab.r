@@ -50,10 +50,9 @@
       ## computation of the Mahalanobis distances
       map<-mahalanobis(as.matrix(df), mu, varcov)
       if (type=="probability")
-          map<-1-pchisq(map, ncol(hihi)-1)
+          map<-1-pchisq(map, ncol(hihi))
       map <- data.frame(MD=map)
       coordinates(map) <- coordinates(x)
       gridded(map) <- TRUE
       return(map)
   }
-

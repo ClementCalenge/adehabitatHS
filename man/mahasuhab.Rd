@@ -42,8 +42,9 @@ mahasuhab(x, pts, type = c("distance", "probability"))
   pixel.
 
   Assuming multivariate normality, squared Mahalanobis distances are
-  approximately distributed as Chi-square with n-1 degrees of freedom,
-  where n equals the number of habitat characteristics.  If the
+  approximately distributed as Chi-square with n degrees of freedom,
+  where n equals the number of habitat characteristics (see the section
+  note below on this question).  If the
   argument \code{type = "probability"}, maps of these p-values are
   returned by the function. As such these are the probabilities of a
   larger squared Mahalanobis distance than that observed when x is
@@ -56,6 +57,10 @@ mahasuhab(x, pts, type = c("distance", "probability"))
   Clark, J.D., Dunn, J.E. and Smith, K.G. (1993) A multivariate model of
   female black bear habitat use for a geographic information
   system. \emph{Journal of Wildlife Management}, \bold{57}, 519--526.
+
+  Etherington, T.R. (2019) Mahalanobis distances and ecological niche
+  modelling: correcting a chi-squared probability error. \emph{Peer J},
+  \bold{7}, e6678.
 }
 \author{ Clement Calenge \email{clement.calenge@ofb.gouv.fr} }
 \note{
@@ -71,6 +76,12 @@ mahasuhab(x, pts, type = c("distance", "probability"))
   Note also that it is recommended to scale the variables before the
   computation, so that they all have the same variance, and therefore
   the same weight in the analysis (see examples below).
+ 
+  Finally, note that in versions of adehabitatHS prior to 0.3.16,
+  \code{mahasuhab} incorrectly calculated the probability, when
+  \code{type = "probability"}, based on a Chi-square with (n-1) degrees
+  of freedom instead of n degrees of freedom (see Etherington 2019 on
+  this issue). 
 }
 \seealso{ \code{\link{madifa}} and \code{\link{dunnfa}} for factor
   analyses of the Mahalanobis distances, \code{\link{domain}} for
