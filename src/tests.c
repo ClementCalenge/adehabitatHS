@@ -899,7 +899,7 @@ void prodmatAAtB (double **a, double **b)
 void prodmatAtBrandomC (double **a, double **b, double **c, int*permut)
 /*--------------------------------------------------
  * Produit matriciel AtB
- * les lignes de B sont permutÚes par la permutation permut
+ * les lignes de B sont permutees par la permutation permut
  --------------------------------------------------*/
 {
     int j, k, i, i0, lig, col, col2;
@@ -2390,7 +2390,7 @@ void randenfar(double *Zr, double *pr, int *nvar, int *npix,
 
 /* 
    sources of the package deal-1.2-30. 
-   Code from Susanne Gammelgaard Bøttcher <alma@math.aau.dk>, 
+   Code from Susanne Gammelgaard Bottcher <alma@math.aau.dk>, 
    Claus Dethlefsen <cld@rn.dk>. 
    Useful for matrix inverse!
 */
