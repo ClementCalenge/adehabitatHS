@@ -928,17 +928,11 @@ void taballoc (double ***tab, int l1, int c1)
  * Dynamic Memory Allocation for a table (l1, c1)
  --------------------------------------------------*/
 {
-    int i, j;
+    int i;
     
-    if ( (*tab = (double **) calloc(l1+1, sizeof(double *))) != 0) {
-	for (i=0;i<=l1;i++) {
-	    if ( (*(*tab+i)=(double *) calloc(c1+1, sizeof(double))) == 0 ) {
-		return;
-		for (j=0;j<i;j++) {
-		    free(*(*tab+j));
-		}
-	    }
-	}
+    *tab = R_Calloc(l1+1, double *);
+    for (i=0;i<=l1;i++) {
+	*(*tab+i)= R_Calloc(c1+1, double);
     }
     
     **(*tab) = l1;
@@ -951,12 +945,9 @@ void vecalloc (double **vec, int n)
  * Memory Allocation for a vector of length n
  --------------------------------------------------*/
 {
-    if ( (*vec = (double *) calloc(n+1, sizeof(double))) != 0) {
-	**vec = n;
-	return;
-    } else {
-	return;
-    }
+    *vec = R_Calloc(n+1, double);
+    **vec = n;
+    return;
 }
 
 /*****************/
@@ -965,12 +956,8 @@ void vecintalloc (int **vec, int n)
  * Memory allocation for an integer vector of length  n
  --------------------------------------------------*/
 {
-    if ( (*vec = (int *) calloc(n+1, sizeof(int))) != NULL) {
-	**vec = n;
-	return;
-    } else {
-	return;
-    }
+    *vec = R_Calloc(n+1, int);
+    **vec = n;
 }
 
 /***********************************************************************/
@@ -983,9 +970,9 @@ void freetab (double **tab)
     
     n = *(*(tab));
     for (i=0;i<=n;i++) {
-	free((char *) *(tab+i) );
+	R_Free(*(tab+i));
     }
-    free((char *) tab);
+    R_Free(tab);
 }
 
 /***********************************************************************/
@@ -994,7 +981,7 @@ void freevec (double *vec)
  * Free memory for a vector
  --------------------------------------------------*/
 {
-    free((char *) vec);	
+    R_Free(vec);	
 }
 
 /***********************************************************************/
@@ -1004,10 +991,9 @@ void freeintvec (int *vec)
 --------------------------------------------------*/
 {
     
-    free((char *) vec);
+    R_Free(vec);
     
 }
-
 
 
 

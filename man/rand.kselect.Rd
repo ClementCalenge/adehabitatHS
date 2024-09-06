@@ -92,7 +92,7 @@ pc <- mcp(locs[,"Name"])
 
 ## rasterize it
 hr <- do.call("data.frame", lapply(1:nrow(pc), function(i) {
-    overlay(map, geometry(pc[i,]))
+    sp::over(map, geometry(pc[i,]))
 }))
 names(hr) <- slot(pc, "data")$id
 coordinates(hr) <- coordinates(map)
